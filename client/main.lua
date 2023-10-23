@@ -1,3 +1,4 @@
-AddEventHandler('Play:Sound', function()
-    TriggerEvent('InteractSound_CL:PlayOnOne', 'Alert', 0.1)
+RegisterNetEvent('Play:Sound')
+AddEventHandler('Play:Sound', function(soundName, soundVolume)
+    TriggerEvent('InteractSound_CL:PlayOnOne', soundName, soundVolume)
 end)
