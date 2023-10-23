@@ -1,3 +1,9 @@
+RegisterServerEvent('Play:ServerSound')
+AddEventHandler('Play:ServerSound', function(soundName, soundVolume)
+    TriggerClientEvent('Play:Sound', -1, soundName, soundVolume)
+end)
+
+
 AddEventHandler('txAdmin:events:scheduledRestart', function(eventData)
     local message = ""
     if eventData.secondsRemaining == 900 then
