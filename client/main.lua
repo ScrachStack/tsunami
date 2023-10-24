@@ -12,7 +12,7 @@ AddEventHandler('changeWeather', function(weatherType)
         TriggerEvent('chatMessage', '^1[Error]^0 You do not have permission to change the weather.')
     end
 end)
-
+-- You can add a ace perm check from the server side and then modify this i didnt think it was needed but if you do then feel free
 function IsAllowedToChangeWeather()
     return true
 end
